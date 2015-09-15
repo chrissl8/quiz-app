@@ -95,6 +95,12 @@ body {
 	display: none;
 }
 
+.no-selection {
+	color: red;
+	font-style: italic;
+	display: none;
+}
+
 .quiz-container .response {
 	display: none;
 }

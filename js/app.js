@@ -60,7 +60,8 @@ console.log("Initial: Current question is " + currQuestion);
 		console.log("Current question is " + currQuestion);
 		if(typeof selectedValue == "undefined")
 			{
-				alert("Choose something");
+				chooseSomething();
+				//alert("Choose something");
 			}
 		else 
 			{
@@ -97,6 +98,11 @@ function nextQuestion() {
 		console.log("end of game");
 	}
 }
+
+function chooseSomething() {
+	$('.no-selection').fadeIn(500);
+	$('.no-selection').delay(4000).fadeOut(500);
+};
 
 function endGame() {
 	$('.question-container').hide();
