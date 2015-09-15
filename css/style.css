@@ -1,0 +1,86 @@
+
+
+body {
+	margin: 0 0 0 0;
+	background-image: url('../images/airplane-bg.jpg');
+	background-repeat: no-repeat;
+	font-family: 'Oxygen', sans-serif;
+	/* background-size: cover; */
+}
+
+.buttons {
+	border: 0;
+    background-color: white;
+    color: rgb(45, 92, 186);
+    font-size: 1.5em;
+    border-radius: 4px;
+    padding: 8px 20px 8px 20px;
+    font-family: 'Oxygen', sans-serif;
+    -webkit-transition: background 0.2s ease-in-out;
+	-moz-transition: background 0.2s ease-in-out;
+	-ms-transition: background 0.2s ease-in-out;
+	-o-transition: background 0.2s ease-in-out;
+	transition: background 0.2s ease-in-out;
+
+}
+
+.buttons:hover {
+	border: 0;
+    background-color: #05C774;
+    color: white
+    font-size: 1.5em;
+    border-radius: 4px;
+    padding: 8px 20px 8px 20px;
+    font-family: 'Oxygen', sans-serif;
+    -webkit-transition: background 0.2s ease-in-out;
+	-moz-transition: background 0.2s ease-in-out;
+	-ms-transition: background 0.2s ease-in-out;
+	-o-transition: background 0.2s ease-in-out;
+	transition: background 0.2s ease-in-out;
+}
+
+.quiz-header {
+	padding: 0em 2em .2em 2em;
+    border-radius: 10px;
+	background-color: rgba(45, 92, 186,0.8);
+	margin-top: 1em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.quiz-header h1 {
+	font-weight: 700;
+	font-size: 3em;
+	color: white;
+}
+
+.quiz-header p {
+	margin: 0em 0em 0em 0em;
+	font-weight: 300;
+	font-size: 1em;
+	color: white;
+}
+
+.quiz-container {
+	padding: 1.2em 2em 1.2em 2em;
+	margin: 1em 10% 1em 10%;
+    border-radius: 10px;
+	background-color: rgba(45, 92, 186,0.8);
+    height: 20em;
+    font-size: 1.2em;
+    color: white;
+}
+
+.quiz-container .question-container {
+	display: none;
+}
+
+.quiz-container .response {
+	display: none;
+}
+
+.quiz-container .finished {
+	display: none;
+}
+
+
