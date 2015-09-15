@@ -27,34 +27,34 @@ console.log("Initial: Current question is " + currQuestion);
 //console.log('Answer 1 is ' + sampleQuestion.answers[0]);
 //console.log('Answer 2 is ' + sampleQuestion.answers[1]);
 
-	$('#startGame').on('click touchstart', function(){
+	$('#startGame').on('click', function(){
 		startNewGame();
 		console.log("New Game: Current question is " + currQuestion);
 	});
 
-	$('#startAnotherGame').on('click touchstart', function(){
+	$('#startAnotherGame').on('click', function(){
 		startNewGame();
 		console.log("Start Over: Current question is " + currQuestion);
 	});
 
-	$('#answer-start-over').on('click touchstart', function(){
+	$('#answer-start-over').on('click', function(){
 		startNewGame();
 		console.log("Start Over: Current question is " + currQuestion);
 	});
 
-	$('#questions-start-over').on('click touchstart', function(){
+	$('#questions-start-over').on('click', function(){
 		startNewGame();
 		console.log("Start Over: Current question is " + currQuestion);
 	});
 
-	$('#nextQuestion').on('click touchstart', function(){
+	$('#nextQuestion').on('click', function(){
 		nextQuestion();
 		console.log("Next Q: Current question is " + currQuestion);
 	});
 
 	//displayQuestion(questionArray[0]);
 
-	$('#submit').on('click touchstart', function(){
+	$('#submit').on('click', function(){
 		var selectedValue = $('input:radio[name=option]:checked').val();
 		console.log("Selected value is " + selectedValue);
 		console.log("Current question is " + currQuestion);
