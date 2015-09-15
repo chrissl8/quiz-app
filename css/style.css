@@ -75,8 +75,8 @@ body {
 
 .response img {
 	border-radius: 4px;
-	max-height: 1em; 
-	max-width: 1em;
+	max-height: 12em; 
+	max-width: 12em;
 }
 
 .response-text {
@@ -174,8 +174,8 @@ and (orientation : portrait) {
 
 .response img {
 	border-radius: 4px;
-	max-height: 1em; 
-	max-width: 200px;
+	max-height: 10em; 
+	max-width: 10em;
 }
 
 .response-text {
