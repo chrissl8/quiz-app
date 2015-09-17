@@ -1,5 +1,11 @@
+/*
+Plane and Simple Quiz App
+By Chris Slaight, 2015
+*/
 
-
+/*
+Body-level Declarations
+*/
 body {
 	margin: 0 0 0 0;
 	background-image: url('../images/airplane-bg.jpg');
@@ -8,6 +14,9 @@ body {
 	/* background-size: cover; */
 }
 
+/*
+Class for all buttons to utilize
+*/
 .buttons {
 	border: 0;
     background-color: white;
@@ -22,9 +31,11 @@ body {
 	-ms-transition: background 0.2s ease-in-out;
 	-o-transition: background 0.2s ease-in-out;
 	transition: background 0.2s ease-in-out;
-
 }
 
+/*
+Button hover effects
+*/
 .buttons:hover {
 	border: 0;
     background-color: #05C774;
@@ -40,6 +51,9 @@ body {
 	transition: background 0.2s ease-in-out;
 }
 
+/*
+Header section of page
+*/
 .quiz-header {
 	padding: 0em 2em .2em 2em;
     border-radius: 10px;
@@ -50,6 +64,9 @@ body {
     overflow: auto;
 }
 
+/*
+H1 inside quiz header
+*/
 .quiz-header h1 {
 	font-weight: 700;
 	font-size: 3em;
@@ -58,6 +75,9 @@ body {
     margin-bottom: .2em;
 }
 
+/*
+P elements inside quiz header
+*/
 .quiz-header p {
 	margin: 0em 0em 0.5em 0em;
 	font-weight: 300;
@@ -65,6 +85,9 @@ body {
 	color: white;
 }
 
+/*
+Parent section which contains quiz elements
+*/
 .quiz-container {
 	padding: 1.2em 2em 1.2em 2em;
 	margin: 1em 10% 1em 10%;
@@ -76,12 +99,18 @@ body {
     overflow: auto;
 }
 
+/*
+Answer response image styling
+*/
 .response img {
 	border-radius: 4px;
 	max-height: 12em; 
 	max-width: 12em;
 }
 
+/*
+Answer response styling
+*/
 .response-text {
 	font-size: 2em;
 	margin-top: 0;
@@ -89,29 +118,47 @@ body {
     font-weight: bold;
 }
 
+/*
+Override of default a element (link) styling for source link
+*/
 .response-source a {
 	text-decoration: underline;
 	color: white;
 }
 
+/*
+Default to keep question-container hidden
+*/
 .quiz-container .question-container {
 	display: none;
 }
 
+/*
+Styling for 'nothing selected' text
+*/
 .no-selection {
 	color: red;
 	font-style: italic;
 	display: none;
 }
 
+/*
+Keep response div hidden
+*/
 .quiz-container .response {
 	display: none;
 }
 
+/*
+Keep finished div hidden
+*/
 .quiz-container .finished {
 	display: none;
 }
 
+/*
+Responsive CSS for Mobile Devices using above declarations
+*/
 @media only screen  
 and (max-device-width : 375px) 
 and (orientation : portrait) {

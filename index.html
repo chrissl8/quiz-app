@@ -1,3 +1,8 @@
+<!--
+Plane and Simple Quiz App
+By Chris Slaight, 2015
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,19 +17,26 @@
 </head>
 <body>
 
-<!-- Quiz Parent Div -->
+<!-- Quiz Parent Section-->
 <section class="quiz">
+
+	<!-- Static header of the quiz -->
 	<div class="quiz-header">
 		<h1 class="quiz-title">Plane and Simple Quiz</h1>
 		<p id="quiz-sub-title">A simple commercial aviation-themed quiz.<br><br>By Chris Slaight, 2015</p>
 	</div>
 
+	<!-- Container to hold newgame, question, answer and finished div elements -->
 	<div class="quiz-container">
 		<p></p>
+
+		<!-- Newgame div shown at beginning of page load -->
 		<div class="newgame">
 			<p>Click the button to start:</p>
 			<input type="button" id="startGame" class="buttons" value="New Quiz">
 		</div>
+
+		<!-- Response div shown once a question is answered -->
 		<div class="response">
 			<p class="response-text"></p>
 			<p class="response-detail"></p>
@@ -32,10 +44,14 @@
 			<p class="response-source"><a href="" target="newtab">Source</a></p>
 			<input type="button" id="nextQuestion" class="buttons" value="Continue"> <input type="button" id="answer-start-over" class="buttons" value="Start Over">
 		</div>
+
+		<!-- Finished div shown at the completion of all questions -->
 		<div class="finished">
 			<p class="finished-text">You've answered <span id="score"></span> of 5 questions correctly.</p>
 			<input type="button" id="startAnotherGame" class="buttons" value="Play Again?">
 		</div>
+
+		<!-- Question-container div shown when a question is asked -->
 		<div class="question-container">
 			<p class="current">Question <span id="currentQuestion"></span> of 5.</p>
 			<p class="no-selection">No answer selected.</p>
@@ -46,7 +62,6 @@
 			<input type="radio" name="option" class="option4" value="3"><span class="answer" id="answer4">Answer 4</span><br><br>
 			<input type="button" id="submit" class="buttons" value="Go!"> <input type="button" id="questions-start-over" class="buttons" value="Start Over">
 		</div>
-
 	</div>
 </section>
 
